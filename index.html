@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Snake</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Manifest -->
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Indie Snake</h1>
+        <div class="game-ui">
+            <div class="score-display">Score: <span id="score">0</span></div>
+            <div class="high-score">High: <span id="high-score">0</span></div>
+        </div>
+        
+        <canvas id="game-board"></canvas>
+        
+        <div class="controls">
+            <button id="start-btn">Start Game</button>
+            <div class="mobile-controls">
+                <button class="control-btn up" aria-label="Up">↑</button>
+                <div>
+                    <button class="control-btn left" aria-label="Left">←</button>
+                    <button class="control-btn down" aria-label="Down">↓</button>
+                    <button class="control-btn right" aria-label="Right">→</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="game-over">
+            <h2>Game Over!</h2>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Try Again</button>
+        </div>
+    </div>
 
+    <script src="js/game.js"></script>
+</body>
+</html>
